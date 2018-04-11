@@ -7,6 +7,8 @@ import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
 import app.example.domain.Test;
+
+//@Mapper代替扫描接口的操作
 @Mapper
 public interface TestMapper {
 

@@ -14,9 +14,6 @@ import com.alibaba.druid.pool.DruidDataSource;
 @Configuration
 @ConfigurationProperties(prefix="spring.datasource")
 public class DataSourceConfig {
-
-	
-
     	private String url;
         private String username;
         private String password;

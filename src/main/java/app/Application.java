@@ -5,7 +5,9 @@ import java.util.logging.Logger;
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
@@ -16,9 +18,8 @@ import org.springframework.transaction.PlatformTransactionManager;
  *
  */
 @SpringBootApplication
-//@ServletComponentScan
-//@ComponentScan  			  //开启bean扫描 
-//@EnableAutoConfiguration	  //开启自动配置
+@EnableCaching		//开启缓存
+@EnableAutoConfiguration
 public class Application {
 
 	public static void main(String[] args) {
